@@ -1,0 +1,54 @@
+# Rhino
+
+# - trim loop
+vp 0 0
+vp 10 0
+cstype bspline
+deg 1
+curv2 1 2
+parm u 0 0 10 10
+end
+vp 10 0
+vp 10 10
+cstype bspline
+deg 1
+curv2 3 4
+parm u 0 0 10 10
+end
+vp 10 10
+vp 0 10
+cstype bspline
+deg 1
+curv2 5 6
+parm u 0 0 10 10
+end
+vp 0 10
+vp 0 0
+cstype bspline
+deg 1
+curv2 7 8
+parm u 0 0 10 10
+end
+v 0 0 2
+v 3 0 0
+v 7 0 0
+v 10 0 -1
+v 0 3 0
+v 3 3 1
+v 7 3 1
+v 10 3 0
+v 0 7 0
+v 3 7 -1
+v 7 7 -1
+v 10 7 0
+v 0 10 1
+v 3 10 0
+v 7 10 0
+v 10 10 -2
+cstype bspline
+deg 3 3
+surf 0 10 0 10 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+parm u 0 0 0 0 10 10 10 10
+parm v 0 0 0 0 10 10 10 10
+trim 0 10 1 0 10 2 0 10 3 0 10 4
+end
